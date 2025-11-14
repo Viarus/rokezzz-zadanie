@@ -2,38 +2,65 @@
   <a routerLink="/" class="logo">
     Andrzej Muskuł
   </a>
-  <div class="hamburger-menu">
-    <button (click)="toggle()">
-      Menu
-    </button>
-    <div class="content" [class.content--visible]="isOpen">
+  <button matIconButton [matMenuTriggerFor]="menu" aria-label="hamburger menu" class="hamburger-menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">trophy</mat-icon>
       <a routerLink="osiagniecia">
         Osiągnięcia
       </a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">metabolism</mat-icon>
       <a routerLink="przemiany">
         Przemiany
       </a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">cards_star</mat-icon>
       <a routerLink="galeria">
         Galeria
       </a>
-    </div>
+    </button>
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">star_shine</mat-icon>
+      <a routerLink="o-mnie">
+        O mnie
+      </a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">fitness_center</mat-icon>
+      <a routerLink="trening">
+        Umów trening
+      </a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon fontSet="material-symbols-outlined">call</mat-icon>
+      <a routerLink="kontakt">
+        Kontakt
+      </a>
+    </button>
+  </mat-menu>
+  <div class="nav-buttons-container">
+    <a routerLink="osiagniecia">
+      Osiągnięcia
+    </a>
+    <a routerLink="przemiany">
+      Przemiany
+    </a>
+    <a routerLink="galeria">
+      Galeria
+    </a>
+    <a routerLink="o-mnie">
+      O mnie
+    </a>
+    <a routerLink="trening">
+      Umów trening
+    </a>
+    <a routerLink="kontakt">
+      Kontakt
+    </a>
   </div>
-  <a routerLink="osiagniecia">
-    Osiągnięcia
-  </a>
-  <a routerLink="przemiany">
-    Przemiany
-  </a>
-  <a routerLink="galeria">
-    Galeria
-  </a>
-  <a routerLink="o-mnie">
-    O mnie
-  </a>
-  <a routerLink="trening">
-    Umów trening
-  </a>
-  <a routerLink="kontakt">
-    Kontakt
-  </a>
 </div>

@@ -1,24 +1,13 @@
-import { Component, inject } from '@angular/core';
-import { RouterLink, Router } from '@angular/router';
-import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [RouterLink, MatButtonModule, MatMenuModule, MatIconModule],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
-export class Navbar {
-  private router = inject(Router);
-  protected isOpen = false;
-
-  constructor() {
-    toObservable(this.router.currentNavigation)
-      .pipe(takeUntilDestroyed())
-      .subscribe(() => (this.isOpen = false));
-  }
-
-  toggle() {
-    this.isOpen = !this.isOpen;
-  }
-}
+export class Navbar {}
