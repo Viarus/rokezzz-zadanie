@@ -1,4 +1,5 @@
 @use '@angular/material' as mat;
+@use "app/shared/styles/animations";
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 html {
@@ -33,4 +34,8 @@ a:active {
   color: inherit;
   text-decoration: none;
   font: inherit;
+}
+
+p {
+  margin: 0;
 }
