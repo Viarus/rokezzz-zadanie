@@ -8,5 +8,5 @@
   <input id="contact-form-phone" type="text" formControlName="phone" />
   <label for="contact-form-message">Wiadomość*:</label>
   <textarea id="contact-form-message" formControlName="message"></textarea>
-  <button type="submit" [disabled]="form.invalid">Submit</button>
+  <button type="submit" matButton="filled" [disabled]="form.invalid">Wyślij</button>
 </form>

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, MatButton],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.scss',
 })
