@@ -1,1 +1,12 @@
-<p>contact-form works!</p>
+<h1>Skontaktuj się!</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="contact-form-name">Imię*:</label>
+  <input id="contact-form-name" type="text" formControlName="name" />
+  <label for="contact-form-email">Email*:</label>
+  <input id="contact-form-email" type="text" formControlName="email" />
+  <label for="contact-form-phone">Numer telefonu:</label>
+  <input id="contact-form-phone" type="text" formControlName="phone" />
+  <label for="contact-form-message">Wiadomość*:</label>
+  <textarea id="contact-form-message" formControlName="message"></textarea>
+  <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>
