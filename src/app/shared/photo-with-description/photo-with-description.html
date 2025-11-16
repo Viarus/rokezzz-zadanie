@@ -3,7 +3,9 @@
   <div class="description" [appRevealOnScroll]="isDescriptionOnTheLeft ? 'left-right' : 'right-left'">
     <ng-content></ng-content>
   </div>
-  <div [class]="`${theme} photo`" [appRevealOnScroll]="isDescriptionOnTheLeft ? 'right-left' : 'left-right'">
-    <img [src]="src" [alt]="alt" />
-  </div>
+  <img
+    [src]="src"
+    [alt]="alt"
+    [class]="`${theme} photo`"
+    [appRevealOnScroll]="isDescriptionOnTheLeft ? 'right-left' : 'left-right'" />
 </div>
