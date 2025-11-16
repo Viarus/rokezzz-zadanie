@@ -19,4 +19,24 @@ export class ContactForm {
   protected onSubmit() {
     console.log(this.form.value);
   }
+
+  getError(control: FormControl) {
+    if (!control.errors || !control.touched) {
+      return null;
+    }
+
+    if (control.errors['required']) {
+      return 'Pole wymagane';
+    }
+
+    if (control.errors['minlength']) {
+      return `Niepoprawny numer telefonu`;
+    }
+
+    if (control.errors['email']) {
+      return 'Niepoprawny adres email';
+    }
+
+    return null;
+  }
 }

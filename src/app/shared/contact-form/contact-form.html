@@ -1,12 +1,21 @@
 <h1>Skontaktuj się!</h1>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  @let placeholder = 'placeholder';
+  @let nameError = getError(form.controls.name);
   <label for="contact-form-name">Imię*:</label>
-  <input id="contact-form-name" type="text" formControlName="name" />
+  <input [class]="nameError ? '--error' : ''" id="contact-form-name" type="text" formControlName="name" />
+  <p [class]="`error ${nameError ? '--visible' : ''}`">{{ nameError ?? placeholder }}</p>
+  @let emailError = getError(form.controls.email);
   <label for="contact-form-email">Email*:</label>
-  <input id="contact-form-email" type="text" formControlName="email" />
+  <input [class]="emailError ? '--error' : ''" id="contact-form-email" type="text" formControlName="email" />
+  <p [class]="`error ${emailError ? '--visible' : ''}`">{{ emailError ?? placeholder }}</p>
+  @let phoneError = getError(form.controls.phone);
   <label for="contact-form-phone">Numer telefonu:</label>
-  <input id="contact-form-phone" type="text" formControlName="phone" />
+  <input [class]="phoneError ? '--error' : ''" id="contact-form-phone" type="text" formControlName="phone" />
+  <p [class]="`error ${phoneError ? '--visible' : ''}`">{{ phoneError ?? placeholder }}</p>
+  @let messageError = getError(form.controls.message);
   <label for="contact-form-message">Wiadomość*:</label>
-  <textarea id="contact-form-message" formControlName="message"></textarea>
+  <textarea [class]="messageError ? '--error' : ''" id="contact-form-message" formControlName="message"></textarea>
+  <p [class]="`error ${messageError ? '--visible' : ''}`">{{ messageError ?? placeholder }}</p>
   <button type="submit" matButton="filled" [disabled]="form.invalid">Wyślij</button>
 </form>

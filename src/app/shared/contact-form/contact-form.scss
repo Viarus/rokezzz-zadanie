@@ -47,15 +47,33 @@ input:focus, input:active, input:focus-visible, textarea:focus, textarea:active,
 
 input {
   height: 2.5rem;
-  margin-bottom: .5rem;
+
+  &.--error {
+    outline: 1px solid red;
+  }
 }
 
 textarea {
   height: 10rem;
+
+  &.--error {
+    outline: 1px solid red;
+  }
 }
 
 button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: .6rem;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+
+  &.--visible {
+    visibility: visible;
+  }
 }
