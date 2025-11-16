@@ -4,7 +4,7 @@
   align-items: center;
   gap: 2rem;
   background-color: #f5f5f7;
-  height: 31rem;
+  height: 29rem;
   padding-left: 4rem;
   padding-right: 4rem;
 
@@ -29,9 +29,8 @@
 
   @media (max-width: 53rem) {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
     height: 20rem;
-    padding-top: 3.5rem;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
 
