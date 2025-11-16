@@ -3,31 +3,6 @@
   width: 100%;
 }
 
-.paragraph-container {
-  display: block;
-  width: 100%;
-  padding: 0 4rem;
-  margin: 2rem 0;
-
-  > p {
-    text-align: center;
-    font-size: 1.8rem;
-
-    @media (max-width: 53rem) {
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-    }
-  }
-
-  > img, app-get-started-button {
-    display: block;
-    width: 100%;
-    max-width: 43rem;
-    margin: 1rem auto 0 auto;
-    text-align: center;
-  }
-}
-
 .photos-container {
   display: flex;
   flex-wrap: wrap;
