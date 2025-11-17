@@ -54,6 +54,10 @@
 
   @include padding-sides;
 
+  > p:last-of-type {
+    margin-bottom: 1rem;
+  }
+
   @media (max-width: 53rem) {
     max-width: 32rem;
   }

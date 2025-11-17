@@ -5,12 +5,17 @@
   @include host-horizontal-scrollbar-fix;
 }
 
-.text-block {
+.base-container {
   margin: 0;
-  padding-top: 2rem;
   padding-bottom: 2rem;
 
   @include padding-sides;
+
+  h1 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin: 0;
+  }
 
   &:first-of-type {
     background-color: $not-white;
