@@ -1,4 +1,5 @@
 @use "../../shared/styles/variables" as *;
+@use "../../shared/styles/mixins" as *;
 
 :host {
   display: flex;
@@ -9,12 +10,14 @@
   background-color: $not-white;
 }
 
-h1 {
-  padding: $spacer-l 0;
+p {
   margin: 0;
+  font-size: $font-size-xxl;
+  text-align: center;
+  padding: $spacer-l 3rem $spacer-m 3rem;
 
-  @media (max-width: 40rem) {
-    font-size: $font-size-l; //TODO
+  @media (max-width: $media-s) {
+    font-size: $font-size-xl;
   }
 }
 
