@@ -1,6 +1,7 @@
 :host {
   display: block;
   width: 100%;
+  overflow: hidden; //stops the horizontal scrollbar to appear on smaller viewports before the animation is played
 }
 
 .photos-container {
