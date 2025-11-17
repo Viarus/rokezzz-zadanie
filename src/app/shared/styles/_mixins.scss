@@ -9,7 +9,7 @@
   padding-left: $padding-sides-big-screen;
   padding-right: $padding-sides-big-screen;
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     padding-left: $padding-sides-small-screen;
     padding-right: $padding-sides-small-screen;
   }

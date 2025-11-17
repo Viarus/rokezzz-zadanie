@@ -7,7 +7,7 @@
 
 .base-container {
   margin: 0;
-  padding-bottom: 2rem;
+  padding-bottom: $spacer-l;
 
   @include padding-sides;
 
@@ -22,17 +22,17 @@
   }
 
   > img {
-    padding-bottom: 2rem;
+    padding-bottom: $spacer-l;
   }
 }
 
 .transformation-container {
   display: flex;
-  gap: 2rem;
+  gap: $spacer-l;
   justify-content: center;
   margin-bottom: 3rem;
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     flex-direction: column;
     align-items: center;
     gap: .5rem;
@@ -43,7 +43,7 @@
     max-width: 30%;
     object-fit: cover;
 
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       max-width: 100%;
       flex-direction: column;
       align-items: center;
@@ -61,7 +61,7 @@
     align-self: center;
     text-align: center;
 
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       max-width: none;
       height: 10rem;
       font-size: 10rem;
@@ -72,7 +72,7 @@
   .arrow_forward {
     display: block;
 
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       display: none;
     }
   }
@@ -80,7 +80,7 @@
   .arrow_down {
     display: none;
 
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       display: block;
     }
   }

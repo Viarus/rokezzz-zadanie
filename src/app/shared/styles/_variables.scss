@@ -2,6 +2,27 @@
 $not-white: #f5f5f7;
 
 // SPACING
+$navbar-height: 2.5rem;
+
 $padding-sides-big-screen: 4rem;
 $padding-sides-small-screen: 1.3rem;
-$navbar-height: 2.5rem;
+
+$spacer-s: .5rem;
+$spacer-m: 1rem;
+$spacer-l: 2rem;
+
+// FONTS
+$base-font-size: 16px;
+$base-line-height: 1.4;
+$base-font-colour: black;
+
+$font-size-xs: .6rem;
+$font-size-s: 1.3rem;
+$font-size-m: 1.6rem;
+$font-size-l: 2rem;
+$font-size-xl: 2.5rem;
+$font-size-xxl: 3rem;
+
+// MEDIA
+$media-l: 82rem;
+$media-s: 53rem;

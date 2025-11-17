@@ -20,14 +20,14 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: $spacer-l;
+  padding-bottom: $spacer-l;
 
   @include padding-sides;
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     flex-direction: column;
-    gap: 1rem;
+    gap: $spacer-m;
   }
 }
 
@@ -35,7 +35,7 @@
   .description {
     order: 0;
     text-align: end;
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       text-align: center;
     }
   }
@@ -50,7 +50,7 @@
     order: 1;
     text-align: start;
 
-    @media (max-width: 53rem) {
+    @media (max-width: $media-s) {
       text-align: center;
     }
   }
@@ -63,14 +63,14 @@
 .photo {
   max-height: 45rem;
   height: 100%;
-  border-radius: 7px;
+  border-radius: .5rem;
   object-fit: contain;
 
-  @media (max-width: 82rem) {
+  @media (max-width: $media-l) {
     max-width: 32rem;
   }
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     max-width: 27rem;
     width: 100%;
   }
@@ -90,13 +90,13 @@
   font-size: 3rem;
   max-width: 30rem;
 
-  @media (max-width: 82rem) {
+  @media (max-width: $media-l) {
     font-size: 2.5rem;
   }
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     max-width: 27rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: $font-size-l;
   }
 }

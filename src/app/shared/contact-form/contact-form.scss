@@ -1,3 +1,5 @@
+@use "../../shared/styles/variables" as *;
+
 :host {
   display: flex;
   flex-direction: column;
@@ -18,11 +20,11 @@ form {
   width: 100%;
   max-width: 50rem;
 
-  @media (max-width: 82rem) {
+  @media (max-width: $media-l) {
     max-width: 40rem;
   }
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     max-width: 25rem;
   }
 }
@@ -32,8 +34,8 @@ label {
 }
 
 input, textarea {
-  font-size: 1.2rem;
-  border-radius: 5px;
+  font-size: $font-size-s;
+  border-radius: .4rem;
   border: 1px solid #cccccc;
 }
 

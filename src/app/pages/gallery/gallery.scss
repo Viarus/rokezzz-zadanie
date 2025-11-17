@@ -10,24 +10,24 @@
 }
 
 h1 {
-  padding: 2rem 0;
+  padding: $spacer-l 0;
   margin: 0;
 
   @media (max-width: 40rem) {
-    font-size: 2rem;
+    font-size: $font-size-l; //TODO
   }
 }
 
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  padding: 0 $padding-sides-big-screen 2rem $padding-sides-big-screen;
+  gap: $spacer-s;
+  padding: 0 $padding-sides-big-screen $spacer-l $padding-sides-big-screen;
   max-width: 80rem;
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 3rem 2rem 3rem;
+    padding: 0 3rem $spacer-l 3rem;
 
     > img {
       &:nth-child(3), &:nth-child(6), &:nth-child(9) {
@@ -42,7 +42,7 @@ h1 {
     height: 100%;
     object-fit: cover;
 
-    @media (min-width: 53rem) {
+    @media (min-width: $media-s) {
       &:nth-child(2), &:nth-child(4), &:nth-child(8) {
         grid-column: span 2;
         grid-row: span 2;

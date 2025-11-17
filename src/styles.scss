@@ -21,9 +21,9 @@ html {
 
 html, body {
   font-family: 'Varela Round', sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  color: black;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-colour;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -40,51 +40,51 @@ a:active {
 
 p {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: $font-size-s;
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 2rem 0;
+  font-size: $font-size-xxl;
+  margin: $spacer-l 0;
   text-align: center;
 
-  @media (max-width: 53rem) {
-    font-size: 2.5rem;
+  @media (max-width: $media-s) {
+    font-size: $font-size-xl;
   }
 }
 
 h2 {
-  font-size: 2rem;
-  margin: .5rem 0;
+  font-size: $font-size-l;
+  margin: $spacer-s 0;
   text-align: center;
 
-  @media (max-width: 53rem) {
-    font-size: 1.5rem;
+  @media (max-width: $media-s) {
+    font-size: $font-size-m;
   }
 }
 
 .margin-st {
-  margin-top: 1rem;
+  margin-top: $spacer-m;
 }
 
 button {
   width: 14rem;
   height: 3rem;
-  border-radius: 40px;
-  font-size: 1.15rem;
+  border-radius: 2.5rem;
+  font-size: $font-size-s;
 }
 
 .base-container {
   display: block;
   width: 100%;
   text-align: center;
+  margin: $spacer-m 0;
   @include padding-sides;
-  margin: 1rem 0;
 
   img, app-get-started-button {
     display: block;
     width: 100%;
     max-width: 43rem;
-    margin: 1rem auto 0 auto
+    margin: $spacer-m auto 0 auto
   }
 }

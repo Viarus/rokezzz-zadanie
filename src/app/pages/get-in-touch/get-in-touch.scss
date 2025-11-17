@@ -1,3 +1,5 @@
+@use "../../shared/styles/variables" as *;
+
 app-contact-form {
-  margin: 1rem 0 2rem 0;
+  margin: $spacer-m 0 $spacer-l 0;
 }

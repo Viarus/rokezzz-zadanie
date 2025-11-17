@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: $spacer-l;
   background-color: $not-white;
   height: 29rem;
 
@@ -16,23 +16,23 @@
   }
 
   > p {
-    font-size: 3rem;
+    font-size: $font-size-xxl;
     text-align: center;
   }
 
-  @media (max-width: 82rem) {
+  @media (max-width: $media-l) {
     > img {
       height: 6rem;
     }
 
     > p {
-      font-size: 2.4em;
+      font-size: 2.4em; //TODO
     }
   }
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     flex-direction: column;
-    gap: 2rem;
+    gap: $spacer-l;
     height: 20rem;
 
     > img {
@@ -40,7 +40,7 @@
     }
 
     > p {
-      font-size: 1.8rem;
+      font-size: $font-size-m;
     }
   }
 }
@@ -48,21 +48,21 @@
 .service-description {
   display: block;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: $spacer-l;
   margin-left: auto;
   margin-right: auto;
 
   @include padding-sides;
 
   > p:last-of-type {
-    margin-bottom: 1rem;
+    margin-bottom: $spacer-m;
   }
 
-  @media (max-width: 53rem) {
+  @media (max-width: $media-s) {
     max-width: 32rem;
   }
 }
 
 app-contact-form {
-  margin-bottom: 2rem;
+  margin-bottom: $spacer-l;
 }
