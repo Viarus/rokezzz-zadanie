@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+@mixin host-horizontal-scrollbar-fix {
+  display: block;
+  overflow: hidden;
+}
+
+@mixin padding-sides {
+  padding-left: $padding-sides-big-screen;
+  padding-right: $padding-sides-big-screen;
+
+  @media (max-width: 53rem) {
+    padding-left: $padding-sides-small-screen;
+    padding-right: $padding-sides-small-screen;
+  }
+}

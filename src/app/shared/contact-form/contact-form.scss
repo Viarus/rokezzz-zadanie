@@ -1,14 +1,11 @@
+@use "../../shared/styles/mixins" as *;
+
 :host {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
 
-  @media (max-width: 53rem) {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-  }
+  @include padding-sides;
 }
 
 h1 {

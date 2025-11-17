@@ -1,24 +1,23 @@
+@use "../../shared/styles/variables" as *;
+@use "../../shared/styles/mixins" as *;
+
 :host {
-  display: block;
-  width: 100%;
-  overflow: hidden; //stops the horizontal scrollbar to appear on smaller viewports before the animation is played
+  @include host-horizontal-scrollbar-fix;
 }
 
 .text-block {
   margin: 0;
-  padding: 2rem 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include padding-sides;
 
   &:first-of-type {
-    background-color: #f5f5f7;
+    background-color: $not-white;
   }
 
   > img {
     padding-bottom: 2rem;
-  }
-
-  @media (max-width: 53rem) {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
   }
 }
 
@@ -43,7 +42,7 @@
       max-width: 100%;
       flex-direction: column;
       align-items: center;
-      padding: 0 1.3rem;
+      padding: 0 $padding-sides-small-screen;
     }
   }
 

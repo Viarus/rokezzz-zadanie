@@ -1,7 +1,8 @@
+@use "../../shared/styles/variables" as *;
+@use "../../shared/styles/mixins" as *;
+
 :host {
-  display: block;
-  width: 100%;
-  overflow: hidden; //stops the horizontal scrollbar to appear on smaller viewports before the animation is played
+  @include host-horizontal-scrollbar-fix;
 }
 
 .row.dark {
@@ -10,7 +11,7 @@
 }
 
 .row.light {
-  background-color: #f5f5f7;
+  background-color: $not-white;
 }
 
 .row {
@@ -19,12 +20,10 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 2rem 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
-  @media (max-width: 53rem) {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-  }
+  @include padding-sides;
 
   @media (max-width: 53rem) {
     flex-direction: column;

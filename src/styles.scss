@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
 @use "app/shared/styles/animations";
+@use "app/shared/styles/variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 html {
@@ -60,7 +61,7 @@ button {
 .text-block {
   display: block;
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 $padding-sides-big-screen;
   margin: 2rem 0;
 
   > p {
