@@ -12,8 +12,7 @@
   @include padding-sides;
 
   p {
-    padding-top: 3rem;
-    padding-bottom: 1.5rem;
+    padding-top: $spacer-l;
     margin: 0;
     font-size: $font-size-xxl;
   }
@@ -31,12 +30,12 @@
   display: flex;
   gap: $spacer-l;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: $spacer-xl;
 
   @media (max-width: $media-s) {
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
+    gap: $spacer-s;
   }
 
   > img {

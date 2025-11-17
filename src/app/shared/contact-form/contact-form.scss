@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
 
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: $spacer-xl;
+  padding-left: $spacer-xl;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: $spacer-s;
   width: 100%;
   max-width: 50rem;
 
@@ -30,12 +30,12 @@ form {
 }
 
 label {
-  font-size: 1.4rem;
+  font-size: $font-size-s;
 }
 
 input, textarea {
   font-size: $font-size-s;
-  border-radius: .4rem;
+  border-radius: $border-radius-s;
   border: 1px solid #cccccc;
 }
 
@@ -66,7 +66,7 @@ button {
 
 .error {
   color: red;
-  font-size: .6rem;
+  font-size: $font-size-xs;
   margin: 0;
   padding: 0;
   visibility: hidden;

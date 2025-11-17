@@ -1,6 +1,8 @@
+@use "../../shared/styles/variables" as *;
+
 a {
   width: 14rem;
   height: 3rem;
-  border-radius: 40px;
-  font-size: 1.15rem;
+  border-radius: $border-radius-m;
+  font-size: $font-size-s;
 }

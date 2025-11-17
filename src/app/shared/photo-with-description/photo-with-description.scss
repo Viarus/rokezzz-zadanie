@@ -19,7 +19,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: $spacer-xl;
   padding-top: $spacer-l;
   padding-bottom: $spacer-l;
 
@@ -63,7 +63,7 @@
 .photo {
   max-height: 45rem;
   height: 100%;
-  border-radius: .5rem;
+  border-radius: $border-radius-s;
   object-fit: contain;
 
   @media (max-width: $media-l) {
@@ -87,11 +87,11 @@
 }
 
 .description {
-  font-size: 3rem;
+  font-size: $spacer-xl;
   max-width: 30rem;
 
   @media (max-width: $media-l) {
-    font-size: 2.5rem;
+    font-size: $font-size-xl;
   }
 
   @media (max-width: $media-s) {

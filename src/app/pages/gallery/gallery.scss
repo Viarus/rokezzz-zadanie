@@ -30,7 +30,7 @@ p {
 
   @media (max-width: $media-s) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 3rem $spacer-l 3rem;
+    padding: 0 $spacer-xl $spacer-l $spacer-xl;
 
     > img {
       &:nth-child(3), &:nth-child(6), &:nth-child(9) {
