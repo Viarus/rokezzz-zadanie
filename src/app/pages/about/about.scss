@@ -4,6 +4,16 @@
   overflow: hidden; //stops the horizontal scrollbar to appear on smaller viewports before the animation is played
 }
 
+.text-block {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  
+  @media (max-width: 53rem) {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+
 .photos-container {
   display: flex;
   flex-wrap: wrap;
@@ -20,5 +30,10 @@
     @media (max-width: 90rem) {
       max-width: 30rem;
     }
+  }
+
+  @media (max-width: 53rem) {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
   }
 }
