@@ -13,14 +13,18 @@ const phoneNumberRegex: RegExp =
 })
 export class ContactForm {
   form = new FormGroup({
-    name: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required, Validators.maxLength(50)]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    message: new FormControl('', [Validators.required]),
     phone: new FormControl('', [Validators.pattern(phoneNumberRegex)]),
+    message: new FormControl('', [Validators.required, Validators.maxLength(500)]),
   });
 
   protected onSubmit() {
     console.log(this.form.value);
+    this.form.reset();
+    alert(
+      'Wiadomość wysłana! (Tak naprawdę to nie - zobacz stopkę). Treść formularza można zobaczyć w konsoli (console.log()).',
+    );
   }
 
   getError(control: FormControl) {
@@ -30,6 +34,10 @@ export class ContactForm {
 
     if (control.errors['required']) {
       return 'Pole wymagane';
+    }
+
+    if (control.errors['maxlength']) {
+      return 'Zbyt dużo znaków';
     }
 
     if (control.errors['pattern']) {
