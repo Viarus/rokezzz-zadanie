@@ -44,3 +44,4 @@ Thumbs.db
 
 # Firebase config files
 /src/app/firebaseConfig.ts
+/firebase-debug.log
