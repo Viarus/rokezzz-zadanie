@@ -1,5 +1,5 @@
 {
-  "name": "rokezzz-zadanie",
+  "name": "andrzej-muskul",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:rokezzz-zadanie": "node dist/rokezzz-zadanie/server/server.mjs"
+    "serve:ssr:andrzej-muskul": "node dist/andrzej-muskul/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
