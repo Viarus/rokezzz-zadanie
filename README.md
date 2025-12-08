@@ -1,6 +1,6 @@
 # Link to application
 
-`https://andrzejmuskulbackend--andrzejmuskul.europe-west4.hosted.app/`
+https://andrzejmuskulbackend--andrzejmuskul.europe-west4.hosted.app/
 
 ## Development server
 
