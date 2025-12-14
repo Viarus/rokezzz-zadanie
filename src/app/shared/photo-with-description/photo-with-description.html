@@ -4,8 +4,11 @@
     <ng-content></ng-content>
   </div>
   <img
-    [src]="src"
+    [ngSrc]="ngSrc"
     [alt]="alt"
     [class]="`${theme} photo`"
-    [appRevealOnScroll]="isDescriptionOnTheLeft ? 'right-left' : 'left-right'" />
+    [appRevealOnScroll]="isDescriptionOnTheLeft ? 'right-left' : 'left-right'"
+    [width]="width"
+    [height]="height"
+  />
 </div>

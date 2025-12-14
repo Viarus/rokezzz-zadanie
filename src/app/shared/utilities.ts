@@ -1,6 +1,8 @@
 export type imgElement = {
-  src: string;
+  ngSrc: string;
   alt: string;
+  width: string;
+  height: string;
 };
 
 const photoPrefix = '/assets/images/';

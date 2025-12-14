@@ -1,7 +1,7 @@
 <p>Poznaj mnie bliżej!</p>
 
 <div class="gallery-container">
-  @for (photo of gallery; track photo.src) {
-    <img [src]="photo.src" [alt]="photo.alt">
+  @for (photo of gallery; track photo.ngSrc) {
+    <img [ngSrc]="photo.ngSrc" [alt]="photo.alt" [width]="photo.width" [height]="photo.height">
   }
 </div>
